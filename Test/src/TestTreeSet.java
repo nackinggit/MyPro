@@ -7,6 +7,10 @@ public class TestTreeSet {
 		TreeSet<Err> ts = new TreeSet<Err>();
 		ts.add(new Err());
 		ts.add(new Err());//as you see, we must implements interface of Comparable
+		
+		for(Err e : ts) {
+			System.out.println(e);
+		}
 	}
 
 }

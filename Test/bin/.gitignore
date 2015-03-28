@@ -31,9 +31,8 @@
 /TestWaitSleep.class
 /TestWindowListener$MyListener.class
 /TestWindowListener.class
+/ThreadTest.class
 /YoucanYup.class
 /algorithm
 /bufferTest
 /music.class
-/nioTest
-/socketTest_Server
