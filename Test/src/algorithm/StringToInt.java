@@ -44,7 +44,7 @@ public class StringToInt {
     }
 	
 	public static void main(String[] args) {
-		String str = "   ++23548";
+		String str = "   +23548";
 		System.out.println(atoi(str));
 	}
 }

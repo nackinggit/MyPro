@@ -21,9 +21,9 @@ public class RemoveElment {
 	            for(int j=index; j<length; j++) {
 	            	if(j != length-1) A[j] = A[j+1];
 	            }
-	            for(int m:A)
+	            /*for(int m:A)
 	        		System.out.println(m);
-	            
+	            */
 	            System.out.println("----------------");
 	            /*A[index] = A[length-1];
 	            A[length-1] = elem;
@@ -44,7 +44,7 @@ public class RemoveElment {
 		RemoveElment re = new RemoveElment();
 		System.out.println(re.removeElment(A, elem));
 		
-		for(int i:A)
-		System.out.println(i);
+		/*for(int i:A)
+		System.out.println(i);*/
 	}
 }

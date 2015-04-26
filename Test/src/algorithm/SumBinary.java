@@ -66,8 +66,8 @@ public class SumBinary {
     }
 	
 	public static void main(String[] args) {
-		String a = "1";
-		String b = "0";
+		String a = "111";
+		String b = "011";
 		System.out.println(addBinary(a, b));
 	}
 }

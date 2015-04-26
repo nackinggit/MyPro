@@ -1,2 +1,0 @@
-ordinary strings
-Test@245f4ae
