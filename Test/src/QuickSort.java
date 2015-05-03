@@ -18,7 +18,7 @@ public class QuickSort {
 				end--;
 			}
 			arr[start] = arr[end];
-			
+
 			while (start < end && arr[start] <= key) {
 				start++;
 			}

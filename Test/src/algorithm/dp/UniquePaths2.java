@@ -40,27 +40,28 @@ public class UniquePaths2 {
 
 		return p[n - 1];
 	}
-	
+
 	public int uniquePathsWithObstacles2(int[][] obstacleGrid) {
 		int n = obstacleGrid[0].length;
 		int m = obstacleGrid.length;
 		int[][] p = new int[m][n]; // p[i]代表从第一个点走到第i行最后一个点的path
 		p[0][0] = obstacleGrid[0][0] ^ 1;
 
-		for(int i=1; i<m; i++) {
-			p[i][0] = (obstacleGrid[i][0] == 1) ? 0 : p[i-1][0];
+		for (int i = 1; i < m; i++) {
+			p[i][0] = (obstacleGrid[i][0] == 1) ? 0 : p[i - 1][0];
 		}
-		
-		for(int j=1; j<n; j++) {
-			p[0][j] = (obstacleGrid[0][j] == 1) ? 0 : p[0][j-1];
+
+		for (int j = 1; j < n; j++) {
+			p[0][j] = (obstacleGrid[0][j] == 1) ? 0 : p[0][j - 1];
 		}
-		
-		for(int i = 1;i<m;i++){
-            for(int j =1;j<n;j++){
-                p[i][j] =(obstacleGrid[i][j]==1)? 0: p[i-1][j]+p[i][j-1];
-            }
-        }
-		
-		return p[m-1][n-1];
+
+		for (int i = 1; i < m; i++) {
+			for (int j = 1; j < n; j++) {
+				p[i][j] = (obstacleGrid[i][j] == 1) ? 0 : p[i - 1][j]
+						+ p[i][j - 1];
+			}
+		}
+
+		return p[m - 1][n - 1];
 	}
 }

@@ -1,4 +1,3 @@
-
 public class ThreadTest implements Runnable {
 
 	@Override
@@ -8,7 +7,7 @@ public class ThreadTest implements Runnable {
 		System.out.println("r1");
 		System.out.println("r2");
 	}
-	
+
 	public static void main(String[] args) throws InterruptedException {
 		Thread t = new Thread(new ThreadTest());
 		t.run();

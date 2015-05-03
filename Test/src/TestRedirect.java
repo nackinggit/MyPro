@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Scanner;
 
-
 public class TestRedirect {
 
 	/**
@@ -14,7 +13,7 @@ public class TestRedirect {
 		FileOutputStream fos = null;
 		PrintStream ps = null;
 		try {
-			
+
 			fos = new FileOutputStream("ReDirect.txt");
 			ps = new PrintStream(fos);
 			System.setOut(ps);

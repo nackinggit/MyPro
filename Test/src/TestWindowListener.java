@@ -3,22 +3,23 @@ import java.awt.TextArea;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-
 public class TestWindowListener {
-	//create a window
+	// create a window
 	private Frame frame = new Frame("Test");
-	//a textview
-	private TextArea ta = new TextArea(6,40);
-	//init
+	// a textview
+	private TextArea ta = new TextArea(6, 40);
+
+	// init
 	public void init() {
 		frame.addWindowListener(new MyListener());
 		frame.add(ta);
-		frame.pack();	
+		frame.pack();
 		frame.setVisible(true);
 	}
-	//implement MyListener
+
+	// implement MyListener
 	class MyListener implements WindowListener {
-		
+
 		@Override
 		public void windowActivated(WindowEvent e) {
 			ta.append("window is activited.\n");
@@ -61,7 +62,7 @@ public class TestWindowListener {
 			ta.append("window has lost focus.\n");
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		new TestWindowListener().init();
 	}
