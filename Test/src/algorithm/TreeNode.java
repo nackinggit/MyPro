@@ -6,8 +6,8 @@ import java.util.List;
 
 public class TreeNode {
 	int val;
-	TreeNode left;
-	TreeNode right;
+	public TreeNode left;
+	public TreeNode right;
 	public TreeNode(int val) {
 		this.val = val;
 	}
@@ -38,12 +38,12 @@ public class TreeNode {
 		return res;
 	}
 	
-	public static void main(String[] args) {
-		TreeNode root = null;
-		//root.left = new TreeNode(3);
-		//root.right = new TreeNode(5);
-		//root.left.right = new TreeNode(6);
-		
-		System.out.println(levelOrder(root));
-	}
+//	public static void main(String[] args) {
+//		TreeNode root = null;
+//		//root.left = new TreeNode(3);
+//		//root.right = new TreeNode(5);
+//		//root.left.right = new TreeNode(6);
+//		
+//		System.out.println(levelOrder(root));
+//	}
 }
