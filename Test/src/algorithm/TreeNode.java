@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class TreeNode {
-	int val;
+	public int val;
 	public TreeNode left;
 	public TreeNode right;
 
@@ -42,12 +42,36 @@ public class TreeNode {
 		return res;
 	}
 
-	// public static void main(String[] args) {
-	// TreeNode root = null;
-	// //root.left = new TreeNode(3);
-	// //root.right = new TreeNode(5);
-	// //root.left.right = new TreeNode(6);
-	//
-	// System.out.println(levelOrder(root));
-	// }
+	
+	public TreeNode reConstruct(int[] preOrder, int[] inOrder) {
+		if(preOrder.length != inOrder.length) return null;
+		
+		int len = preOrder.length;
+		
+		return _reConstruct(preOrder, 0, len - 1, inOrder, 0, len - 1);
+	}
+
+	private TreeNode _reConstruct(int[] preOrder, int ps, int pe, int[] inOrder, int is, int ie) {
+		
+		int rootVal = preOrder[0];
+		TreeNode root = new TreeNode(rootVal);
+		root.left = root.right = null;
+		
+		int rootIn = is;
+		while(rootIn <= ie && inOrder[rootIn] != rootVal) {
+			rootIn++;
+		}
+		
+		int leftLen = rootIn - is;
+		int leftPreEnd = leftLen + ps;
+		
+		if(leftLen > 0) {
+			root.left = _reConstruct(preOrder, ps+1, leftPreEnd, inOrder, is, rootIn-1);
+		}
+		if(leftLen < pe - ps) {
+			root.right = _reConstruct(preOrder, leftPreEnd+1, pe, inOrder, rootIn+1, ie);
+		}
+		
+		return root;
+	}
 }
