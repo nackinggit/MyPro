@@ -6,9 +6,15 @@ package algorithm.backtracking;
  * "adjacent" cells are those horizontally or vertically neighboring. The same
  * letter cell may not be used more than once.
  * 
- * For example, Given board = [ ["ABCE"], ["SFCS"], ["ADEE"] ] word = "ABCCED",
- * -> returns true, word = "SEE", -> returns true, word = "ABCB", -> returns
- * false.
+ * For example, Given board = [ ["ABCE"], 
+ * 								["SFCS"], 
+ * 								["ADEE"] ] 
+ * word = "ABCCED",
+ * 	-> returns true, 
+ * word = "SEE", 
+ * 	-> returns true, 
+ * word = "ABCB",
+ *  -> returns false.
  * 
  * @author Nacking
  * 
