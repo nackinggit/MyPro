@@ -1,4 +1,6 @@
 import java.util.HashSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 class Singleton {
 
@@ -18,6 +20,7 @@ class Singleton {
 		}
 		return cache;
 	}
+	
 }
 
 public class Test {
@@ -36,5 +39,20 @@ public class Test {
 		ss.add(d);
 
 		System.out.println(ss.size());
+		
+		
+		
+		String css = "  127.0.0.1  ";
+		System.out.println(isIp(css));
+	}
+	
+	public static boolean isIp(String s) {
+		String regex = "\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}";
+		
+		s = s.trim();
+		Pattern p = Pattern.compile(regex);	//编译一个正则表达式
+		Matcher m = p.matcher(s);
+		System.out.println(s);
+		return (m.matches());
 	}
 }
