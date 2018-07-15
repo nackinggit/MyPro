@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 /**
  * N个数的全排列, 大小为n的数字数组的全排列
+ * 本质上是深度优先遍历（dfs）
  */
 public class NPermutation {
     public static List<List<Integer>> nPerm(int[] nums) {
@@ -27,7 +28,7 @@ public class NPermutation {
             if(k == startIndex || nums[startIndex] != nums[k]) {
                 swap(nums, startIndex, k);
                 doNPerm(res, nums, startIndex + 1, endIndex);
-                swap(nums, startIndex, k);
+                swap(nums, startIndex, k); //状态还原
             }
         }
     }

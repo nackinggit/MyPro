@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * C(n,k)问题， 即n个不同数中取k个的组合
- * 本质上是深度遍历
+ * 本质上是深度遍历（dfs）
  */
 public class KsComForN {
     public static List<List<Integer>> cnk(int n, int k) {
@@ -24,7 +24,7 @@ public class KsComForN {
             for (int i = startVal; i <= n; i++) {
                 curRes.add(i);
                 doCombination(res, curRes, n, k, i + 1);
-                curRes.remove(curRes.size() - 1);
+                curRes.remove(curRes.size() - 1); //还原
             }
         }
     }
