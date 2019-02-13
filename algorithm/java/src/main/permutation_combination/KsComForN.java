@@ -34,20 +34,19 @@ public class KsComForN {
     //非递归
     public static List<List<Integer>> cnkWithoutRe(int n, int k) {
         List<List<Integer>> res = new LinkedList<>();
-        List<Integer> curRes = new LinkedList<>();
-        doCombination2(res, curRes, n, k);
+        doCombination2(res, n, k);
         return res;
     }
 
     //用栈模拟递归
-    private static void doCombination2(List<List<Integer>> res, List<Integer> curRes, int n, int k) {
+    private static void doCombination2(List<List<Integer>> res, int n, int k) {
         Stack<Integer> queue = new Stack<>();
         boolean needPop = false;
         queue.add(1);
         while (!queue.isEmpty()) {
             //有k个元素，满足条件
             if (queue.size() == k) {
-                curRes = new LinkedList<>(queue);
+                List<Integer> curRes = new LinkedList<>(queue);
                 res.add(curRes);
                 needPop = true;
             }
