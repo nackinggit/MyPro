@@ -16,7 +16,7 @@ public class SocketTest {
 		serverChannel.socket().bind(new InetSocketAddress(8189));
 
 		while (true) {
-			// 启动新的线程处理连接
+			// 鍚姩鏂扮殑绾跨▼澶勭悊杩炴帴
 			Socket s = serverChannel.socket().accept();
 			socketList.add(s);
 			new Thread(new ServerThread(s)).start();

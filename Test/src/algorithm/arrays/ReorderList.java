@@ -1,8 +1,8 @@
 package algorithm.arrays;
 
 /**
- * Given a singly linked list L: L0¡úL1¡ú¡­¡úLn-1¡úLn, reorder it to:
- * L0¡úLn¡úL1¡úLn-1¡úL2¡úLn-2¡ú¡­
+ * Given a singly linked list L: L0â†’L1â†’â€¦â†’Ln-1â†’Ln, reorder it to:
+ * L0â†’Lnâ†’L1â†’Ln-1â†’L2â†’Ln-2â†’â€¦
  * 
  * You must do this in-place without altering the nodes' values.
  * 

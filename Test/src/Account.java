@@ -1,7 +1,7 @@
 /**
- * ÕË»§Àà£¬Ç®Ã»ÓĞÈ¡Íê²»×¼´æ£¬´æ¶àÉÙÈ¡¶àÉÙ Ï´ºÚÇ®£¿£¿£¿£¿
+ * è´¦æˆ·ç±»ï¼Œé’±æ²¡æœ‰å–å®Œä¸å‡†å­˜ï¼Œå­˜å¤šå°‘å–å¤šå°‘ æ´—é»‘é’±ï¼Ÿï¼Ÿï¼Ÿï¼Ÿ
  * 
- * @author Nacking 2014Äê5ÔÂ19ÈÕ11:09:35
+ * @author Nacking 2014å¹´5æœˆ19æ—¥11:09:35
  * 
  */
 public class Account {
@@ -29,11 +29,11 @@ public class Account {
 			}
 
 			else {
-				System.out.println(Thread.currentThread().getName() + "È¡ÁË"
-						+ drawAmount + "Ôª");
+				System.out.println(Thread.currentThread().getName() + "å–äº†"
+						+ drawAmount + "å…ƒ");
 				balance = balance - drawAmount;
 
-				System.out.println("Óà¶îÎª£º" + balance);
+				System.out.println("ä½™é¢ä¸ºï¼š" + balance);
 
 				flag = false;
 
@@ -52,10 +52,10 @@ public class Account {
 			}
 
 			else {
-				System.out.println(Thread.currentThread().getName() + "´æÁË"
-						+ depositAmount + "Ôª");
+				System.out.println(Thread.currentThread().getName() + "å­˜äº†"
+						+ depositAmount + "å…ƒ");
 				balance = balance + depositAmount;
-				System.out.println("Óà¶îÎª" + balance + "Ôª");
+				System.out.println("ä½™é¢ä¸º" + balance + "å…ƒ");
 				flag = true;
 
 				notifyAll();

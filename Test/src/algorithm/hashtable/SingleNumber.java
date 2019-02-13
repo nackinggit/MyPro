@@ -15,7 +15,7 @@ import java.util.Set;
  * 
  */
 public class SingleNumber {
-	//·½·¨Ò»£ºÀûÓÃhashset
+	//æ–¹æ³•ä¸€ï¼šåˆ©ç”¨hashset
 	public int singleNumber(int[] nums) {
 		int len = nums.length;
 		Set<Integer> list = new HashSet<>();
@@ -33,7 +33,7 @@ public class SingleNumber {
 		return iterator.next();
 	}
 
-	//·½·¨¶ş£ºÒì»òÔËËã£¡
+	//æ–¹æ³•äºŒï¼šå¼‚æˆ–è¿ç®—ï¼
 	public int singleNumber2(int[] nums) {
         int len = nums.length;
         int m = 0;

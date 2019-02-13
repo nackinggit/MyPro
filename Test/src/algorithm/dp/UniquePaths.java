@@ -20,7 +20,7 @@ package algorithm.dp;
  */
 public class UniquePaths {
 	public int uniquePaths(int m, int n) {
-		int[][] p = new int[m][n]; // p[i][j]为走到（i,j）位置的唯一路径的方法数
+		int[][] p = new int[m][n]; // p[i][j]涓鸿蛋鍒帮紙i,j锛変綅缃殑鍞竴璺緞鐨勬柟娉曟暟
 
 		for (int i = 0; i < p.length; i++) {
 			p[i][0] = 1;

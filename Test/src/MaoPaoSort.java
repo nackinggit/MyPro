@@ -16,7 +16,7 @@ public class MaoPaoSort {
 		// TODO Auto-generated method stub
 		int[] src = new int[] { 1, 2, 3, 5, 8, 9, 62, 4, 7, 44 };
 
-		System.out.println("ÅÅĞòÖ®Ç°£º");
+		System.out.println("æ’åºä¹‹å‰ï¼š");
 
 		for (int i = 0; i < src.length; i++) {
 			System.out.println(src[i]);
@@ -25,7 +25,7 @@ public class MaoPaoSort {
 		// Sort Starting
 		sort(src);
 
-		System.out.println("ÅÅĞòÖ®ºó£º");
+		System.out.println("æ’åºä¹‹åï¼š");
 
 		for (int i = 0; i < src.length; i++) {
 			System.out.println(src[i]);

@@ -17,7 +17,7 @@ public class GamePlauIH implements InvocationHandler {
 			throws Throwable {
 		Object res = method.invoke(this.obj, args);
 		if(method.getName().equalsIgnoreCase("login")) {
-			System.out.println(" 有人在用我的账号登陆");
+			System.out.println(" 鏈変汉鍦ㄧ敤鎴戠殑璐﹀彿鐧婚檰");
 		}
 		return res;
 	}

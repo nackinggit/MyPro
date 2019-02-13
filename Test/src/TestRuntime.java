@@ -8,10 +8,10 @@ public class TestRuntime {
 		// getRuntime
 		Runtime rt = Runtime.getRuntime();
 		// rt.exec("notepad.exe");
-		System.out.println("´¦ÀíÆ÷ÊıÁ¿: " + rt.availableProcessors());
-		System.out.println("¿ÕÏĞÄÚ´æÊı: " + rt.freeMemory());
-		System.out.println("×ÜÄÚ´æÊı: " + rt.totalMemory());
-		System.out.println("¿ÉÓÃ×î´óÄÚ´æÊı: " + rt.maxMemory());
+		System.out.println("å¤„ç†å™¨æ•°é‡: " + rt.availableProcessors());
+		System.out.println("ç©ºé—²å†…å­˜æ•°: " + rt.freeMemory());
+		System.out.println("æ€»å†…å­˜æ•°: " + rt.totalMemory());
+		System.out.println("å¯ç”¨æœ€å¤§å†…å­˜æ•°: " + rt.maxMemory());
 	}
 
 }

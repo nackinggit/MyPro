@@ -6,26 +6,26 @@ import java.util.Map;
 import java.util.Properties;
 
 /**
- * ²âÊÔ£¬java²©´ó¾«Éî
+ * æµ‹è¯•ï¼Œjavaåšå¤§ç²¾æ·±
  * 
- * @author Nacking£¬2014Äê5ÔÂ23ÈÕ17:10:48
+ * @author Nackingï¼Œ2014å¹´5æœˆ23æ—¥17:10:48
  * 
  */
 public class ObjectPoolFactory {
 	private Map<String, Object> objectPool = new HashMap<String, Object>();
 
 	/**
-	 * Ò»¸ö´´½¨¶ÔÏóµÄ·½·¨£¬¸ù¾İÊäÈëµÄjavaÀàÃû´´½¨Ò»¸öjava¶ÔÏó
+	 * ä¸€ä¸ªåˆ›å»ºå¯¹è±¡çš„æ–¹æ³•ï¼Œæ ¹æ®è¾“å…¥çš„javaç±»ååˆ›å»ºä¸€ä¸ªjavaå¯¹è±¡
 	 * 
 	 * @param clazzName
-	 *            ÊäÈëµÄjavaÀàÃû
-	 * @return Ò»¸öÓëÊäÈëÀàÃû¶ÔÓ¦µÄobject
+	 *            è¾“å…¥çš„javaç±»å
+	 * @return ä¸€ä¸ªä¸è¾“å…¥ç±»åå¯¹åº”çš„object
 	 * @throws ClassNotFoundException
-	 *             Äã´óÒ¯
+	 *             ä½ å¤§çˆ·
 	 * @throws IllegalAccessException
-	 *             Ğ¡´íÎó
+	 *             å°é”™è¯¯
 	 * @throws InstantiationException
-	 *             ²»¹Ü²»»áËÀ
+	 *             ä¸ç®¡ä¸ä¼šæ­»
 	 */
 	private Object creatObject(String clazzName) throws ClassNotFoundException,
 			InstantiationException, IllegalAccessException {
@@ -34,10 +34,10 @@ public class ObjectPoolFactory {
 	}
 
 	/**
-	 * ¸ù¾İÖ¸¶¨ÎÄ¼ş³õÊ¼»¯¶ÔÏó³Ø
+	 * æ ¹æ®æŒ‡å®šæ–‡ä»¶åˆå§‹åŒ–å¯¹è±¡æ± 
 	 * 
 	 * @param fileName
-	 *            Ö¸¶¨ÎÄ¼şÃû
+	 *            æŒ‡å®šæ–‡ä»¶å
 	 * @throws ClassNotFoundException
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
@@ -55,7 +55,7 @@ public class ObjectPoolFactory {
 				objectPool.put(name, creatObject(props.getProperty(name)));
 			}
 		} catch (IOException e) {
-			System.out.println("¶ÁÈ¡" + fileName + "ÎÄ¼şÒì³£.");
+			System.out.println("è¯»å–" + fileName + "æ–‡ä»¶å¼‚å¸¸.");
 			e.printStackTrace();
 		} finally {
 			try {
@@ -69,10 +69,10 @@ public class ObjectPoolFactory {
 	}
 
 	/**
-	 * »ñµÃ¶ÔÏó³ØÀïµÄÖ¸¶¨¶ÔÏó
+	 * è·å¾—å¯¹è±¡æ± é‡Œçš„æŒ‡å®šå¯¹è±¡
 	 * 
 	 * @param name
-	 *            Ö¸¶¨¶ÔÏóµÄÃû×Ö
+	 *            æŒ‡å®šå¯¹è±¡çš„åå­—
 	 * @return
 	 */
 	public Object getObject(String name) {

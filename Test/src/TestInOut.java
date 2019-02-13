@@ -34,7 +34,7 @@ public class TestInOut {
 			// use a bytes[] of buff to store datas
 			// byte[] buff = new byte[32];
 			// char[] cbuff = new char[32];
-			// ´ÓfisÁ÷ÖĞ¶ÁÈ¡Êı¾İ£¨read£©µ½buff£¬²¢°Ñbuff´«µİµ½fos£¬È»ºófosÁ÷write buffµ½newFile¡£
+			// ä»fisæµä¸­è¯»å–æ•°æ®ï¼ˆreadï¼‰åˆ°buffï¼Œå¹¶æŠŠbuffä¼ é€’åˆ°fosï¼Œç„¶åfosæµwrite buffåˆ°newFileã€‚
 			/*
 			 * while((hasRead = fr.read(cbuff)) == 32) { System.out.print(new
 			 * String(cbuff)); fw.write(cbuff, 0, hasRead); }

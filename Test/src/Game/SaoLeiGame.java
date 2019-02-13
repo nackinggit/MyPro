@@ -29,10 +29,10 @@ public class SaoLeiGame extends MouseAdapter {
 	public SaoLeiGame() {
 		row = 15;
 		col = 15;
-		mainFrame = new JFrame("É¨À× v1.0");
+		mainFrame = new JFrame("æ‰«é›· v1.0");
 		data = new int[row][col];
 		buttons = new JButton[row][col];
-		startButton = new JButton("satrt");
+		startButton = new JButton("start");
 		l = new Label("Welcome to Saolei!~");
 		mineNum = row * col / 7;
 	}
@@ -50,23 +50,19 @@ public class SaoLeiGame extends MouseAdapter {
 		mainFrame.add(center, BorderLayout.CENTER);
 		mainFrame.add(south, BorderLayout.SOUTH);
 		north.add(l);
-		startButton.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				for (int i = 0; i < row; i++) {
-					for (int j = 0; j < col; j++) {
-						buttons[i][j].setText(" ");
-						buttons[i][j].setBackground(Color.WHITE);
-						data[i][j] = 0;
-						isOver = false;
-					}
-				}
-				hashMine();
-				mineCount = 0;
-				l.setText("start");
-			}
-		});
+		startButton.addActionListener(e -> {
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < col; j++) {
+                    buttons[i][j].setText(" ");
+                    buttons[i][j].setBackground(Color.WHITE);
+                    data[i][j] = 0;
+                    isOver = false;
+                }
+            }
+            hashMine();
+            mineCount = 0;
+            l.setText("start");
+        });
 		center.add(startButton);
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < col; j++) {
@@ -111,7 +107,7 @@ public class SaoLeiGame extends MouseAdapter {
 	}
 
 	private void gameOver(boolean over) {
-		if (over == true) {
+		if (over) {
 			for (int i = 0; i < row; i++) {
 				for (int j = 0; j < col; j++) {
 					if (data[i][j] == -1) {
@@ -188,8 +184,7 @@ public class SaoLeiGame extends MouseAdapter {
 
 		if (data[i][j] == -1) {
 			gameOver(true);
-			return;
-		} else {
+        } else {
 			jb.setText(data[i][j] + "");
 			jb.setBackground(Color.YELLOW);
 

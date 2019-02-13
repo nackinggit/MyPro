@@ -6,14 +6,14 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Çó×î´ó×Ó¶ÎºÍ
+ * æ±‚æœ€å¤§å­æ®µå’Œ
  * 
  * @author Nacking
  * 
  */
 public class Zuidaziduanhe {
 	/**
-	 * ×î±¿µÄ·½·¨,Çî¾Ù
+	 * æœ€ç¬¨çš„æ–¹æ³•,ç©·ä¸¾
 	 * 
 	 * @param num
 	 * @return
@@ -56,7 +56,7 @@ public class Zuidaziduanhe {
 	}
 
 	/**
-	 * O(nlogn)·½·¨£¬ ¹é²¢
+	 * O(nlogn)æ–¹æ³•ï¼Œ å½’å¹¶
 	 * 
 	 * @param num
 	 * @return
@@ -115,7 +115,7 @@ public class Zuidaziduanhe {
 	}
 
 	/**
-	 * O(n)·½·¨ DPËã·¨:ÏÈÇó°üº¬num[i]ÔÚÄÚµÄ×î´ó×Ó¶ÎºÍ£¬ÓÃSi±íÊ¾£¬ÔòS = max£¨Si£©¡£ ¶øSi = MAX{S(i-1)+
+	 * O(n)æ–¹æ³• DPç®—æ³•:å…ˆæ±‚åŒ…å«num[i]åœ¨å†…çš„æœ€å¤§å­æ®µå’Œï¼Œç”¨Siè¡¨ç¤ºï¼Œåˆ™S = maxï¼ˆSiï¼‰ã€‚ è€ŒSi = MAX{S(i-1)+
 	 * num[i], num[i]}
 	 * 
 	 * @param num

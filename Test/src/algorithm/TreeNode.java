@@ -17,7 +17,7 @@ public class TreeNode {
 
 		List<List<Integer>> res = new ArrayList<>();
 		LinkedList<TreeNode> nodequene = new LinkedList<>();
-		nodequene.offer(root);// ½«root¼ÓÔÚ½áµã¶ÓÁĞµÄÎ²²¿
+		nodequene.offer(root);// å°†rootåŠ åœ¨ç»“ç‚¹é˜Ÿåˆ—çš„å°¾éƒ¨
 		TreeNode levelLast = root;
 		List<Integer> res1 = new ArrayList<>();
 
@@ -25,7 +25,7 @@ public class TreeNode {
 			return res;
 
 		while (nodequene.size() > 0) {
-			TreeNode current = nodequene.poll(); // »ñµÃ²¢É¾³ıµÚÒ»¸öNode
+			TreeNode current = nodequene.poll(); // è·å¾—å¹¶åˆ é™¤ç¬¬ä¸€ä¸ªNode
 			res1.add(current.val);
 			if (current.left != null)
 				nodequene.offer(current.left);
@@ -35,7 +35,7 @@ public class TreeNode {
 			if (current == levelLast) {
 				res.add(res1);
 				res1 = new ArrayList<>();
-				levelLast = nodequene.peekLast(); // »ñµÃµ«²»É¾³ı½áµã¶ÓÁĞµÄµÚÒ»¸ö½áµã
+				levelLast = nodequene.peekLast(); // è·å¾—ä½†ä¸åˆ é™¤ç»“ç‚¹é˜Ÿåˆ—çš„ç¬¬ä¸€ä¸ªç»“ç‚¹
 			}
 		}
 

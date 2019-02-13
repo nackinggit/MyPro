@@ -9,7 +9,7 @@ public class music extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	public static void main(String[] args) {
-		music music = new music("ÎåÏßÆ×", 20, 10, 1300, 710, Color.white);
+		music music = new music("äº”çº¿è°±", 20, 10, 1300, 710, Color.white);
 		music.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 

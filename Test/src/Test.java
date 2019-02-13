@@ -5,16 +5,16 @@ import java.util.regex.Pattern;
 class Singleton {
 
 	// static final String s1 = System.currentTimeMillis() + "";
-	// »º´æÉú³ÉµÄµ¥ÀıÀà
+	// ç¼“å­˜ç”Ÿæˆçš„å•ä¾‹ç±»
 	private static Singleton cache;
 
 	private Singleton() {
 		System.out.println("danlimoshi.");
 	}
 
-	// »ñµÃ¸Ãµ¥ÀıÀà¶ÔÏóµÄ·½·¨
+	// è·å¾—è¯¥å•ä¾‹ç±»å¯¹è±¡çš„æ–¹æ³•
 	public static Singleton getInstance() {
-		// µ¥ÀıÀà¶ÔÏóÊÇ·ñÒÑ´´½¨
+		// å•ä¾‹ç±»å¯¹è±¡æ˜¯å¦å·²åˆ›å»º
 		if (cache == null) {
 			cache = new Singleton();
 		}
@@ -50,7 +50,7 @@ public class Test {
 		String regex = "\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}";
 		
 		s = s.trim();
-		Pattern p = Pattern.compile(regex);	//±àÒëÒ»¸öÕıÔò±í´ïÊ½
+		Pattern p = Pattern.compile(regex);	//ç¼–è¯‘ä¸€ä¸ªæ­£åˆ™è¡¨è¾¾å¼
 		Matcher m = p.matcher(s);
 		System.out.println(s);
 		return (m.matches());

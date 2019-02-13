@@ -25,7 +25,7 @@ package algorithm.dp;
 public class UniquePaths2 {
 	public int uniquePathsWithObstacles(int[][] obstacleGrid) {
 		int n = obstacleGrid[0].length;
-		int[] p = new int[n]; // p[i]代表从第一个点走到第i行最后一个点的path
+		int[] p = new int[n]; // p[i]浠ｈ〃浠庣涓�涓偣璧板埌绗琲琛屾渶鍚庝竴涓偣鐨刾ath
 		p[0] = 1;
 
 		for (int[] row : obstacleGrid) {
@@ -44,7 +44,7 @@ public class UniquePaths2 {
 	public int uniquePathsWithObstacles2(int[][] obstacleGrid) {
 		int n = obstacleGrid[0].length;
 		int m = obstacleGrid.length;
-		int[][] p = new int[m][n]; // p[i]代表从第一个点走到第i行最后一个点的path
+		int[][] p = new int[m][n]; // p[i]浠ｈ〃浠庣涓�涓偣璧板埌绗琲琛屾渶鍚庝竴涓偣鐨刾ath
 		p[0][0] = obstacleGrid[0][0] ^ 1;
 
 		for (int i = 1; i < m; i++) {

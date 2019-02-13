@@ -8,10 +8,10 @@ public class TestDraw {
 		DepositThread dp2 = new DepositThread(account, 800);
 		DepositThread dp3 = new DepositThread(account, 800);
 
-		Thread draw = new Thread(dt, "ȡǮ");
-		Thread deposit1 = new Thread(dp1, "��Ǯ1");
-		Thread deposit2 = new Thread(dp2, "��Ǯ2");
-		Thread deposit3 = new Thread(dp3, "��Ǯ3");
+		Thread draw = new Thread(dt, "取钱");
+		Thread deposit1 = new Thread(dp1, "存钱1");
+		Thread deposit2 = new Thread(dp2, "存钱2");
+		Thread deposit3 = new Thread(dp3, "存钱3");
 
 		draw.start();
 		deposit1.start();

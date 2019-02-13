@@ -17,7 +17,7 @@ public class TestWaitSleep implements Runnable {
 	public void secondMethod() throws Exception {
 		synchronized (this) {
 			/**
-			 * sleep or wait 2s 以验证当前线程对象的机锁被占用时, 是否被可以访问其他同步代码块
+			 * sleep or wait 2s 浠ラ獙璇佸綋鍓嶇嚎绋嬪璞＄殑鏈洪攣琚崰鐢ㄦ椂, 鏄惁琚彲浠ヨ闂叾浠栧悓姝ヤ唬鐮佸潡
 			 */
 
 			// Thread.sleep(2000);

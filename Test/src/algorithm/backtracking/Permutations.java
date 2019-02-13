@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 求一个数组的全排列，效率不高
+ * 姹備竴涓暟缁勭殑鍏ㄦ帓鍒楋紝鏁堢巼涓嶉珮
  * 
  * @author Nacking
  * 

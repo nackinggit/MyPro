@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /**
- * ÎÒÒªÊµÏÖÏòÒ»¸öÎÄ¼şÀïÌí¼Ó£¬¶ÁÈ¡£¬²åÈëÄÚÈİ ÀûÓÃRandomAccessFile
+ * æˆ‘è¦å®ç°å‘ä¸€ä¸ªæ–‡ä»¶é‡Œæ·»åŠ ï¼Œè¯»å–ï¼Œæ’å…¥å†…å®¹ åˆ©ç”¨RandomAccessFile
  * 
  * @author Nacking
  * 
@@ -15,7 +15,7 @@ public class TestRandomAccessFile {
 			raf = new RandomAccessFile("C:\\Users\\Nacking\\Desktop\\out.txt",
 					"rw");
 			raf.seek(raf.length());
-			String str = new String("Ã÷ÔÂ¼¸Ê±ÓĞ£¬°Ñ¾ÆÎÊÇàÌì.\r\n");
+			String str = new String("æ˜æœˆå‡ æ—¶æœ‰ï¼ŒæŠŠé…’é—®é’å¤©.\r\n");
 			byte[] b = str.getBytes();
 			raf.write(b);
 		} catch (IOException e) {

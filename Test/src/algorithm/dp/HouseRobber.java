@@ -1,7 +1,7 @@
 package algorithm.dp;
 
 /**
- * 给定一个非负数组，求不相邻最大和
+ * 缁欏畾涓�涓潪璐熸暟缁勶紝姹備笉鐩搁偦鏈�澶у拰
  * 
  * @author Nacking
  */
