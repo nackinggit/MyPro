@@ -52,7 +52,7 @@ public class IsomorphicStrings {
 	public static void main(String[] args) {
 		IsomorphicStrings i = new IsomorphicStrings();
 		String s = "abb";
-		String t = "aaa";
+		String t = "baa";
 		System.out.println(i.isIsomorphic(s, t));
 	}
 }

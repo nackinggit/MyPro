@@ -40,8 +40,8 @@ public class WordBreak2 {
 			if (wordDict.contains(s.substring(0, i + 1))) {
 				List<String> strs = wordBreak(s.substring(i + 1, s.length()), wordDict);
 				if (strs.size() != 0) {
-					for (Iterator<String> it = strs.iterator(); it.hasNext();) {
-						result.add(s.substring(0, i + 1) + " " + it.next());
+					for (String str : strs) {
+						result.add(s.substring(0, i + 1) + " " + str);
 					}
 				}
 			}
@@ -65,5 +65,6 @@ public class WordBreak2 {
 		
 		WordBreak2 w = new WordBreak2();
 		List<String> ls = w.wordBreak(s, wordDict);
+		System.out.println(ls);
 	}
 }

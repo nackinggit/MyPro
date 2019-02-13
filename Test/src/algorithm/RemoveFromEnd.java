@@ -3,7 +3,7 @@ package algorithm;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class RomoveFromEnd {
+public class RemoveFromEnd {
 	public ListNode2 removeNthFromEnd(ListNode2 head, int n) {
 		ArrayList<ListNode2> list = new ArrayList<>();
 		ListNode2 head2;
@@ -32,7 +32,7 @@ public class RomoveFromEnd {
 		ListNode2 head = new ListNode2(1);
 		head.next = new ListNode2(2);
 
-		RomoveFromEnd r = new RomoveFromEnd();
+		RemoveFromEnd r = new RemoveFromEnd();
 		ListNode2 h = r.removeNthFromEnd(head, 1);
 
 		while (h != null) {
