@@ -14,7 +14,7 @@ public class PrintLeftView {
             while (!queue.isEmpty()) {
                 TreeNode first = queue.poll();
                 if (first != null) {
-                    if(first != TreeNode.EMPTY) {
+                    if (first != TreeNode.EMPTY) {
                         System.out.print(first.val);
                     } else {
                         System.out.print(", ");
@@ -30,17 +30,17 @@ public class PrintLeftView {
 
                     while (true) {
                         TreeNode node = queue.poll();
-                        if(node != null && node != TreeNode.EMPTY) {
+                        if (node != null && node != TreeNode.EMPTY) {
 //                            System.out.print(node.val);
-                            if(node.left != null) {
+                            if (node.left != null) {
                                 queue.add(node.left);
                             }
-                            if(node.right != null) {
+                            if (node.right != null) {
                                 queue.add(node.right);
                             }
                         } else {
 //                            System.out.print(",");
-                            if(!queue.isEmpty()) {
+                            if (!queue.isEmpty()) {
                                 queue.add(TreeNode.EMPTY);
                             }
                             break;

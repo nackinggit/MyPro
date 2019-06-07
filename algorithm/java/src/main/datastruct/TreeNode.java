@@ -1,8 +1,5 @@
 package datastruct;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-
 public class TreeNode {
     public int val;
     public TreeNode left;
